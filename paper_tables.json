@@ -1,0 +1,1881 @@
+{
+ "main": {
+  "N": 32,
+  "trials": 1560,
+  "friedman_chi2": 150.07233883058467,
+  "friedman_p": 3.920319670237327e-29,
+  "CD": 1.856100852593953,
+  "rows": [
+   {
+    "method": "Fixed-0.5",
+    "abs": 0.5103158213989161,
+    "excess": 275.9567964471615,
+    "median": 188.7625595170081,
+    "rank": 7.8125
+   },
+   {
+    "method": "SMOTE@0.5",
+    "abs": 0.31903465998284214,
+    "excess": 84.67563503108755,
+    "median": 76.26412943604738,
+    "rank": 6.171875
+   },
+   {
+    "method": "SMOTE+cal+tuned",
+    "abs": 0.30133780152418793,
+    "excess": 66.97877657243333,
+    "median": 38.25075023051053,
+    "rank": 5.390625
+   },
+   {
+    "method": "Source-tuned",
+    "abs": 0.2995315278112731,
+    "excess": 65.1725028595185,
+    "median": 56.25699536865529,
+    "rank": 5.390625
+   },
+   {
+    "method": "BBSE-SAT",
+    "abs": 0.24894066475656307,
+    "excess": 14.581639804808479,
+    "median": 7.252712622024914,
+    "rank": 2.578125
+   },
+   {
+    "method": "SMOTE+cal+SAT",
+    "abs": 0.24745482800668334,
+    "excess": 13.095803054928743,
+    "median": 7.176881640725731,
+    "rank": 2.234375
+   },
+   {
+    "method": "Point-SAT",
+    "abs": 0.24669366803976428,
+    "excess": 12.33464308800971,
+    "median": 7.02737043963786,
+    "rank": 2.75
+   },
+   {
+    "method": "Robust-SAT",
+    "abs": 0.2628615341268374,
+    "excess": 28.50250917508282,
+    "median": 10.254534115188763,
+    "rank": 3.671875
+   }
+  ]
+ },
+ "wilcoxon": [
+  {
+   "vs": "Fixed-0.5",
+   "wins": 32,
+   "raw": 2.3283064365386963e-10,
+   "holm": 1.6298145055770874e-09
+  },
+  {
+   "vs": "SMOTE@0.5",
+   "wins": 30,
+   "raw": 1.1641532182693481e-09,
+   "holm": 6.984919309616089e-09
+  },
+  {
+   "vs": "SMOTE+cal+tuned",
+   "wins": 29,
+   "raw": 1.6298145055770874e-08,
+   "holm": 6.51925802230835e-08
+  },
+  {
+   "vs": "Source-tuned",
+   "wins": 29,
+   "raw": 1.0011717677116394e-08,
+   "holm": 5.005858838558197e-08
+  },
+  {
+   "vs": "BBSE-SAT",
+   "wins": 11,
+   "raw": 0.9020587805751364,
+   "holm": 1
+  },
+  {
+   "vs": "SMOTE+cal+SAT",
+   "wins": 12,
+   "raw": 0.6610002832021564,
+   "holm": 1
+  },
+  {
+   "vs": "Robust-SAT",
+   "wins": 17,
+   "raw": 0.00014652626009624466,
+   "holm": 0.00043957878028873395
+  }
+ ],
+ "two_sided": {
+  "SMOTE+cal+SAT": 0.691578262951225,
+  "BBSE-SAT": 0.19588243884972711
+ },
+ "domain": [
+  {
+   "domain": "Cyber security",
+   "N": 7,
+   "Fixed-0.5": 127.82958741775019,
+   "SMOTE+cal+tuned": 39.91109623945315,
+   "Source-tuned": 41.219858310252064,
+   "BBSE-SAT": 7.883764411659962,
+   "SMOTE+cal+SAT": 7.788125836385896,
+   "Point-SAT": 10.009397697877917,
+   "Robust-SAT": 23.211742217312526,
+   "ps_src": "5/7"
+  },
+  {
+   "domain": "Finance & fraud",
+   "N": 10,
+   "Fixed-0.5": 465.7187712889569,
+   "SMOTE+cal+tuned": 95.86902023610853,
+   "Source-tuned": 86.44922338651507,
+   "BBSE-SAT": 27.955629123450038,
+   "SMOTE+cal+SAT": 19.306509252055264,
+   "Point-SAT": 19.370250482280312,
+   "Robust-SAT": 41.32342017770489,
+   "ps_src": "10/10"
+  },
+  {
+   "domain": "Medical",
+   "N": 11,
+   "Fixed-0.5": 285.41526721597364,
+   "SMOTE+cal+tuned": 79.01568953837057,
+   "Source-tuned": 79.20259788446309,
+   "BBSE-SAT": 11.197053365686777,
+   "SMOTE+cal+SAT": 10.9050677904023,
+   "Point-SAT": 11.097047020113367,
+   "Robust-SAT": 29.724373714999743,
+   "ps_src": "11/11"
+  },
+  {
+   "domain": "Industrial & anomaly",
+   "N": 4,
+   "Fixed-0.5": 34.763680529909074,
+   "SMOTE+cal+tuned": 9.020097339633304,
+   "Source-tuned": 15.315068184645696,
+   "BBSE-SAT": 2.1755611537991637,
+   "SMOTE+cal+SAT": 12.881994672010123,
+   "Point-SAT": 2.2181932217787983,
+   "Robust-SAT": 2.3489463598541116,
+   "ps_src": "3/4"
+  }
+ ],
+ "shift": [
+  {
+   "m": 0.3333333333333333,
+   "cov": 30,
+   "Fixed-0.5": 9.494016673847442,
+   "SMOTE@0.5": 53.69151090717825,
+   "SMOTE+cal+tuned": 68.64184134771881,
+   "Source-tuned": 59.290478718344744,
+   "BBSE-SAT": 19.94774428676378,
+   "SMOTE+cal+SAT": 20.00922238201735,
+   "Point-SAT": 16.929110681285337,
+   "Robust-SAT": 25.196733487030365
+  },
+  {
+   "m": 0.5,
+   "cov": 32,
+   "Fixed-0.5": 26.205917117934,
+   "SMOTE@0.5": 31.323022604049914,
+   "SMOTE+cal+tuned": 38.60956262780425,
+   "Source-tuned": 30.832514228010364,
+   "BBSE-SAT": 16.935915777882673,
+   "SMOTE+cal+SAT": 15.523834690469496,
+   "Point-SAT": 13.415715489782286,
+   "Robust-SAT": 17.716009404603167
+  },
+  {
+   "m": 1.0,
+   "cov": 32,
+   "Fixed-0.5": 128.95011916895078,
+   "SMOTE@0.5": 18.33294960960299,
+   "SMOTE+cal+tuned": 8.922233330196706,
+   "Source-tuned": 5.156673355917576,
+   "BBSE-SAT": 10.961448012119373,
+   "SMOTE+cal+SAT": 9.119576341157492,
+   "Point-SAT": 10.156278281592032,
+   "Robust-SAT": 6.023050176154646
+  },
+  {
+   "m": 2.0,
+   "cov": 32,
+   "Fixed-0.5": 442.62989427925686,
+   "SMOTE@0.5": 101.54779088051289,
+   "SMOTE+cal+tuned": 56.221336367147295,
+   "Source-tuned": 61.39700086126379,
+   "BBSE-SAT": 15.349769654298536,
+   "SMOTE+cal+SAT": 13.55519792277431,
+   "Point-SAT": 13.514785167469016,
+   "Robust-SAT": 30.62984000680676
+  },
+  {
+   "m": 3.0,
+   "cov": 30,
+   "Fixed-0.5": 809.7522571437548,
+   "SMOTE@0.5": 228.12527296884002,
+   "SMOTE+cal+tuned": 175.76313279882112,
+   "Source-tuned": 179.8764093737462,
+   "BBSE-SAT": 11.13685654231092,
+   "SMOTE+cal+SAT": 7.657067743934927,
+   "Point-SAT": 8.531230487401047,
+   "Robust-SAT": 66.10554355824378
+  }
+ ],
+ "prior": {
+  "em": 0.01741178995258497,
+  "bbse": 0.0231335965541372,
+  "em_better": 17,
+  "N": 32,
+  "p": 0.10844366159290075,
+  "bbse_nan": 0
+ },
+ "prior_by_batch": [
+  {
+   "nmax": 200,
+   "em": 0.03166424859722139,
+   "bbse": 0.03952441236162023,
+   "ps": 33.940276905360115,
+   "src": 79.03405831239526
+  },
+  {
+   "nmax": 500,
+   "em": 0.023270817662907332,
+   "bbse": 0.02881971314702857,
+   "ps": 21.19176617233657,
+   "src": 70.80115206055903
+  },
+  {
+   "nmax": 1000,
+   "em": 0.01965768220664895,
+   "bbse": 0.025780270384707694,
+   "ps": 15.89185083740569,
+   "src": 66.60175469380705
+  },
+  {
+   "nmax": 4000,
+   "em": 0.01741178995258497,
+   "bbse": 0.0231335965541372,
+   "ps": 12.33464308800971,
+   "src": 65.1725028595185
+  }
+ ],
+ "gate": {
+  "fallback": 0.23397435897435898,
+  "datasets_any": 17,
+  "max_rate": 1.0,
+  "worse": 17,
+  "better": 0,
+  "by_shift": {
+   "0.3333333333333333": 0.157,
+   "0.5": 0.178,
+   "1.0": 0.222,
+   "2.0": 0.291,
+   "3.0": 0.323
+  }
+ },
+ "config": [
+  {
+   "config": "LR, r=5 (main)",
+   "N": 32,
+   "trials": 1560,
+   "Friedman p": 3.9e-29,
+   "PS<Src": "29/32",
+   "Holm p vs Src": 5.005858838558198e-08,
+   "PS<SmCalTuned": "29/32",
+   "PS vs SmSAT (2-sided p)": 0.692,
+   "PS vs BBSE (2-sided p)": 0.196,
+   "gate fallback": 0.234,
+   "Robust worse/better than PS": "17/0",
+   "EM err": 0.0174,
+   "BBSE err": 0.0231
+  },
+  {
+   "config": "XGBoost, r=5",
+   "N": 32,
+   "trials": 1560,
+   "Friedman p": 5.4e-22,
+   "PS<Src": "29/32",
+   "Holm p vs Src": 8.236973482925371e-06,
+   "PS<SmCalTuned": "27/32",
+   "PS vs SmSAT (2-sided p)": 0.531,
+   "PS vs BBSE (2-sided p)": 0.068,
+   "gate fallback": 0.224,
+   "Robust worse/better than PS": "14/0",
+   "EM err": 0.0143,
+   "BBSE err": 0.0213
+  },
+  {
+   "config": "LR, r=1",
+   "N": 32,
+   "trials": 1560,
+   "Friedman p": 1.7e-24,
+   "PS<Src": "30/32",
+   "Holm p vs Src": 6.51925802230835e-08,
+   "PS<SmCalTuned": "30/32",
+   "PS vs SmSAT (2-sided p)": 0.239,
+   "PS vs BBSE (2-sided p)": 0.139,
+   "gate fallback": 0.234,
+   "Robust worse/better than PS": "17/0",
+   "EM err": 0.0174,
+   "BBSE err": 0.0499
+  },
+  {
+   "config": "LR, r=2",
+   "N": 32,
+   "trials": 1560,
+   "Friedman p": 2.9e-26,
+   "PS<Src": "30/32",
+   "Holm p vs Src": 1.6298145055770874e-08,
+   "PS<SmCalTuned": "29/32",
+   "PS vs SmSAT (2-sided p)": 0.172,
+   "PS vs BBSE (2-sided p)": 0.192,
+   "gate fallback": 0.234,
+   "Robust worse/better than PS": "17/0",
+   "EM err": 0.0174,
+   "BBSE err": 0.0219
+  },
+  {
+   "config": "LR, r=10",
+   "N": 32,
+   "trials": 1560,
+   "Friedman p": 5.7000000000000005e-30,
+   "PS<Src": "30/32",
+   "Holm p vs Src": 3.4924596548080444e-08,
+   "PS<SmCalTuned": "26/32",
+   "PS vs SmSAT (2-sided p)": 0.21,
+   "PS vs BBSE (2-sided p)": 0.875,
+   "gate fallback": 0.234,
+   "Robust worse/better than PS": "15/1",
+   "EM err": 0.0174,
+   "BBSE err": 0.0214
+  },
+  {
+   "config": "LR, batch<=200",
+   "N": 32,
+   "trials": 1490,
+   "Friedman p": 6.699999999999999e-25,
+   "PS<Src": "26/32",
+   "Holm p vs Src": 1.6195699572563171e-06,
+   "PS<SmCalTuned": "28/32",
+   "PS vs SmSAT (2-sided p)": 0.934,
+   "PS vs BBSE (2-sided p)": 0.091,
+   "gate fallback": 0.151,
+   "Robust worse/better than PS": "21/6",
+   "EM err": 0.0317,
+   "BBSE err": 0.0395
+  },
+  {
+   "config": "LR, batch<=500",
+   "N": 32,
+   "trials": 1540,
+   "Friedman p": 8.2e-28,
+   "PS<Src": "27/32",
+   "Holm p vs Src": 2.859160304069519e-07,
+   "PS<SmCalTuned": "29/32",
+   "PS vs SmSAT (2-sided p)": 0.512,
+   "PS vs BBSE (2-sided p)": 0.625,
+   "gate fallback": 0.232,
+   "Robust worse/better than PS": "22/0",
+   "EM err": 0.0233,
+   "BBSE err": 0.0288
+  },
+  {
+   "config": "LR, batch<=1000",
+   "N": 32,
+   "trials": 1580,
+   "Friedman p": 1.8e-29,
+   "PS<Src": "30/32",
+   "Holm p vs Src": 2.211891114711761e-08,
+   "PS<SmCalTuned": "29/32",
+   "PS vs SmSAT (2-sided p)": 0.818,
+   "PS vs BBSE (2-sided p)": 0.548,
+   "gate fallback": 0.258,
+   "Robust worse/better than PS": "21/0",
+   "EM err": 0.0197,
+   "BBSE err": 0.0258
+  }
+ ],
+ "config_excess": {
+  "LR, r=5 (main)": {
+   "Fixed-0.5": 276.0,
+   "SMOTE@0.5": 84.7,
+   "SMOTE+cal+tuned": 67.0,
+   "Source-tuned": 65.2,
+   "BBSE-SAT": 14.6,
+   "SMOTE+cal+SAT": 13.1,
+   "Point-SAT": 12.3,
+   "Robust-SAT": 28.5
+  },
+  "XGBoost, r=5": {
+   "Fixed-0.5": 212.1,
+   "SMOTE@0.5": 162.4,
+   "SMOTE+cal+tuned": 53.0,
+   "Source-tuned": 56.9,
+   "BBSE-SAT": 17.1,
+   "SMOTE+cal+SAT": 9.6,
+   "Point-SAT": 10.3,
+   "Robust-SAT": 29.0
+  },
+  "LR, r=1": {
+   "Fixed-0.5": 27.4,
+   "SMOTE@0.5": 64.8,
+   "SMOTE+cal+tuned": 30.2,
+   "Source-tuned": 29.0,
+   "BBSE-SAT": 17.4,
+   "SMOTE+cal+SAT": 5.6,
+   "Point-SAT": 4.6,
+   "Robust-SAT": 18.8
+  },
+  "LR, r=2": {
+   "Fixed-0.5": 73.8,
+   "SMOTE@0.5": 54.0,
+   "SMOTE+cal+tuned": 45.6,
+   "Source-tuned": 43.3,
+   "BBSE-SAT": 6.8,
+   "SMOTE+cal+SAT": 9.3,
+   "Point-SAT": 7.7,
+   "Robust-SAT": 20.5
+  },
+  "LR, r=10": {
+   "Fixed-0.5": 679.6,
+   "SMOTE@0.5": 202.5,
+   "SMOTE+cal+tuned": 76.3,
+   "Source-tuned": 100.8,
+   "BBSE-SAT": 15.1,
+   "SMOTE+cal+SAT": 13.1,
+   "Point-SAT": 16.6,
+   "Robust-SAT": 39.8
+  },
+  "LR, batch<=200": {
+   "Fixed-0.5": 293.0,
+   "SMOTE@0.5": 97.0,
+   "SMOTE+cal+tuned": 81.7,
+   "Source-tuned": 79.0,
+   "BBSE-SAT": 39.2,
+   "SMOTE+cal+SAT": 35.6,
+   "Point-SAT": 33.9,
+   "Robust-SAT": 42.2
+  },
+  "LR, batch<=500": {
+   "Fixed-0.5": 280.6,
+   "SMOTE@0.5": 89.7,
+   "SMOTE+cal+tuned": 73.1,
+   "Source-tuned": 70.8,
+   "BBSE-SAT": 23.1,
+   "SMOTE+cal+SAT": 21.3,
+   "Point-SAT": 21.2,
+   "Robust-SAT": 36.3
+  },
+  "LR, batch<=1000": {
+   "Fixed-0.5": 277.1,
+   "SMOTE@0.5": 86.2,
+   "SMOTE+cal+tuned": 69.0,
+   "Source-tuned": 66.6,
+   "BBSE-SAT": 18.7,
+   "SMOTE+cal+SAT": 16.6,
+   "Point-SAT": 15.9,
+   "Robust-SAT": 34.1
+  }
+ },
+ "config_ranks": {
+  "LR, r=5 (main)": {
+   "Fixed-0.5": 7.81,
+   "SMOTE@0.5": 6.17,
+   "SMOTE+cal+tuned": 5.39,
+   "Source-tuned": 5.39,
+   "BBSE-SAT": 2.58,
+   "SMOTE+cal+SAT": 2.23,
+   "Point-SAT": 2.75,
+   "Robust-SAT": 3.67
+  },
+  "XGBoost, r=5": {
+   "Fixed-0.5": 7.11,
+   "SMOTE@0.5": 6.17,
+   "SMOTE+cal+tuned": 5.3,
+   "Source-tuned": 5.44,
+   "BBSE-SAT": 3.19,
+   "SMOTE+cal+SAT": 2.86,
+   "Point-SAT": 2.53,
+   "Robust-SAT": 3.41
+  },
+  "LR, r=1": {
+   "Fixed-0.5": 5.5,
+   "SMOTE@0.5": 7.19,
+   "SMOTE+cal+tuned": 6.03,
+   "Source-tuned": 5.73,
+   "BBSE-SAT": 2.8,
+   "SMOTE+cal+SAT": 2.78,
+   "Point-SAT": 2.27,
+   "Robust-SAT": 3.7
+  },
+  "LR, r=2": {
+   "Fixed-0.5": 7.22,
+   "SMOTE@0.5": 6.34,
+   "SMOTE+cal+tuned": 5.58,
+   "Source-tuned": 5.56,
+   "BBSE-SAT": 2.47,
+   "SMOTE+cal+SAT": 2.81,
+   "Point-SAT": 2.39,
+   "Robust-SAT": 3.62
+  },
+  "LR, r=10": {
+   "Fixed-0.5": 7.94,
+   "SMOTE@0.5": 6.41,
+   "SMOTE+cal+tuned": 4.83,
+   "Source-tuned": 5.53,
+   "BBSE-SAT": 2.75,
+   "SMOTE+cal+SAT": 2.33,
+   "Point-SAT": 2.67,
+   "Robust-SAT": 3.55
+  },
+  "LR, batch<=200": {
+   "Fixed-0.5": 7.91,
+   "SMOTE@0.5": 5.83,
+   "SMOTE+cal+tuned": 5.27,
+   "Source-tuned": 5.11,
+   "BBSE-SAT": 3.22,
+   "SMOTE+cal+SAT": 2.48,
+   "Point-SAT": 2.7,
+   "Robust-SAT": 3.48
+  },
+  "LR, batch<=500": {
+   "Fixed-0.5": 7.81,
+   "SMOTE@0.5": 6.11,
+   "SMOTE+cal+tuned": 5.44,
+   "Source-tuned": 5.22,
+   "BBSE-SAT": 2.69,
+   "SMOTE+cal+SAT": 2.44,
+   "Point-SAT": 2.56,
+   "Robust-SAT": 3.73
+  },
+  "LR, batch<=1000": {
+   "Fixed-0.5": 7.81,
+   "SMOTE@0.5": 6.2,
+   "SMOTE+cal+tuned": 5.44,
+   "Source-tuned": 5.39,
+   "BBSE-SAT": 2.81,
+   "SMOTE+cal+SAT": 2.31,
+   "Point-SAT": 2.42,
+   "Robust-SAT": 3.61
+  }
+ },
+ "natural": [
+  {
+   "case": "Finance: card fraud, monthly (2020)",
+   "batches": 7,
+   "source prev": 0.0058,
+   "target prev (range)": "0.0018\u20130.0055",
+   "domain AUC (mean)": 0.549,
+   "EM |error| (mean)": 0.0005,
+   "gate fired": "0/7",
+   "Fixed-0.5": 1.58,
+   "SMOTE+cal+tuned": 2.56,
+   "Source-tuned": 0.46,
+   "BBSE-SAT": 0.17,
+   "SMOTE+cal+SAT": 2.62,
+   "Point-SAT": 0.07,
+   "Robust-SAT": 0.07,
+   "PS<Src": "4/7"
+  },
+  {
+   "case": "Medical: diabetes readmission, later periods",
+   "batches": 5,
+   "source prev": 0.0994,
+   "target prev (range)": "0.0547\u20130.0949",
+   "domain AUC (mean)": 0.834,
+   "EM |error| (mean)": 0.3703,
+   "gate fired": "2/5",
+   "Fixed-0.5": 14.52,
+   "SMOTE+cal+tuned": 42.5,
+   "Source-tuned": 43.65,
+   "BBSE-SAT": 496.59,
+   "SMOTE+cal+SAT": 536.75,
+   "Point-SAT": 536.77,
+   "Robust-SAT": 318.68,
+   "PS<Src": "0/5"
+  },
+  {
+   "case": "Marketing: bank campaign, later periods",
+   "batches": 5,
+   "source prev": 0.0468,
+   "target prev (range)": "0.0546\u20130.4594",
+   "domain AUC (mean)": 0.995,
+   "EM |error| (mean)": 0.8187,
+   "gate fired": "5/5",
+   "Fixed-0.5": 351.34,
+   "SMOTE+cal+tuned": 351.34,
+   "Source-tuned": 351.34,
+   "BBSE-SAT": 351.34,
+   "SMOTE+cal+SAT": 280.02,
+   "Point-SAT": 280.65,
+   "Robust-SAT": 351.34,
+   "PS<Src": "1/5"
+  },
+  {
+   "case": "Marketing: same, macro columns removed",
+   "batches": 5,
+   "source prev": 0.0468,
+   "target prev (range)": "0.0546\u20130.4594",
+   "domain AUC (mean)": 0.984,
+   "EM |error| (mean)": 0.8187,
+   "gate fired": "5/5",
+   "Fixed-0.5": 372.36,
+   "SMOTE+cal+tuned": 372.36,
+   "Source-tuned": 372.36,
+   "BBSE-SAT": 372.36,
+   "SMOTE+cal+SAT": 301.58,
+   "Point-SAT": 301.43,
+   "Robust-SAT": 372.36,
+   "PS<Src": "1/5"
+  }
+ ],
+ "datasets": [
+  {
+   "id": "C01",
+   "domain": "Cyber security",
+   "name": "Malware (conference study)",
+   "file": "imbalanced_malware_dataset.csv",
+   "N": 55000,
+   "features": 33,
+   "prev": 0.0909,
+   "auc": 0.9796672888888888,
+   "licence": "not recorded",
+   "host": ""
+  },
+  {
+   "id": "C04",
+   "domain": "Cyber security",
+   "name": "Cyber-IDS (conference study)",
+   "file": "Cybersecurity_Preprocessed_Imbalanced.csv",
+   "N": 6273,
+   "features": 14,
+   "prev": 0.1594,
+   "auc": 0.7932237673830594,
+   "licence": "not recorded",
+   "host": ""
+  },
+  {
+   "id": "D001",
+   "domain": "Cyber security",
+   "name": "Classification of Malwares (CLaMP)",
+   "file": "ClaMP_Imbalanced.csv",
+   "N": 3032,
+   "features": 69,
+   "prev": 0.1794,
+   "auc": 0.9839973390494492,
+   "licence": "CC BY 4.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D002",
+   "domain": "Cyber security",
+   "name": "Dataset for Link Phishing Detection",
+   "file": "pre_link_phishing_imb.csv",
+   "N": 10861,
+   "features": 84,
+   "prev": 0.1054,
+   "auc": 0.9843187801667398,
+   "licence": "MIT License",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D004",
+   "domain": "Cyber security",
+   "name": "Malware Detection Dataset",
+   "file": "AndroidMalware_Imbalanced.csv",
+   "N": 5392,
+   "features": 86,
+   "prev": 0.0974,
+   "auc": 0.9757629616785156,
+   "licence": "CC0 1.0 Universal",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D005",
+   "domain": "Cyber security",
+   "name": "Network Intrusion Dataset",
+   "file": "Cybersecurity_WebAttack_Preprocessed_30k.csv",
+   "N": 29957,
+   "features": 78,
+   "prev": 0.014,
+   "auc": 0.9934997179284666,
+   "licence": "CC0 1.0 Universal",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D006",
+   "domain": "Cyber security",
+   "name": "Dataset Ready for Malicious URL Detection",
+   "file": "Phishing_Imb_Pre.csv",
+   "N": 4206,
+   "features": 56,
+   "prev": 0.2128,
+   "auc": 0.8971649127535873,
+   "licence": "Apache 2.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D021",
+   "domain": "Finance & fraud",
+   "name": "Loan Approval Dataset",
+   "file": "ready_loan_data.csv",
+   "N": 4269,
+   "features": 11,
+   "prev": 0.3778,
+   "auc": 0.9671313914783743,
+   "licence": "MIT License",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D039",
+   "domain": "Finance & fraud",
+   "name": "Insurance Claim Fraud Prediction",
+   "file": "pre_ins_fraud.csv",
+   "N": 1000,
+   "features": 33,
+   "prev": 0.247,
+   "auc": 0.737712269791916,
+   "licence": "CC BY 4.0",
+   "host": "data.mendeley.com"
+  },
+  {
+   "id": "D042",
+   "domain": "Finance & fraud",
+   "name": "Insurance Purchased Prediction",
+   "file": "caravan_preprocessed.csv",
+   "N": 9822,
+   "features": 85,
+   "prev": 0.0597,
+   "auc": 0.7203319280863488,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D044",
+   "domain": "Finance & fraud",
+   "name": "Customer Churn Prediction",
+   "file": "pre_telco_churn.csv",
+   "N": 7032,
+   "features": 30,
+   "prev": 0.2658,
+   "auc": 0.8402448132254838,
+   "licence": "CC0 1.0 Universal",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D046",
+   "domain": "Finance & fraud",
+   "name": "Bank Marketing",
+   "file": "pre_bank_marketing.csv",
+   "N": 41188,
+   "features": 46,
+   "prev": 0.1127,
+   "auc": 0.7847819734683501,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D048",
+   "domain": "Finance & fraud",
+   "name": "Iranian Churn Dataset",
+   "file": "customer_churn_preprocessed.csv",
+   "N": 3150,
+   "features": 13,
+   "prev": 0.1571,
+   "auc": 0.8925616331513446,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D049",
+   "domain": "Finance & fraud",
+   "name": "Online Shoppers Purchasing Intention Dataset",
+   "file": "online_shoppers_preprocessed.csv",
+   "N": 12330,
+   "features": 17,
+   "prev": 0.1547,
+   "auc": 0.8856793190819414,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D050",
+   "domain": "Finance & fraud",
+   "name": "Airbnb for Boston with Fraud Detection",
+   "file": "preprocessed_airbnb_fraud.csv",
+   "N": 3585,
+   "features": 20,
+   "prev": 0.2139,
+   "auc": 0.8882284921369104,
+   "licence": "AGPL-3.0 (GNU Affero General Public License, version 3)",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D054",
+   "domain": "Finance & fraud",
+   "name": "Fraudulent Claim on Cars Physical Damage",
+   "file": "preprocessed_training_data.csv",
+   "N": 17998,
+   "features": 22,
+   "prev": 0.1565,
+   "auc": 0.7093323547178145,
+   "licence": "Unspecified (see source)",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D056",
+   "domain": "Finance & fraud",
+   "name": "Insuranec Fraud Claimed",
+   "file": "preprocessed_insu_response.csv",
+   "N": 20632,
+   "features": 10,
+   "prev": 0.1611,
+   "auc": 0.8484765870884364,
+   "licence": "CC0 1.0 Universal",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D075",
+   "domain": "Industrial & anomaly",
+   "name": "Machine Failure Computer Numerical Control",
+   "file": "ai4i2020_preprocessed.csv",
+   "N": 10000,
+   "features": 6,
+   "prev": 0.0339,
+   "auc": 0.8887518775626193,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D076",
+   "domain": "Industrial & anomaly",
+   "name": "Annealing",
+   "file": "Annealing_Binary_Preprocessed.csv",
+   "N": 798,
+   "features": 84,
+   "prev": 0.2381,
+   "auc": 0.9901735212347808,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D077",
+   "domain": "Industrial & anomaly",
+   "name": "Aps Failure",
+   "file": "aps_failure_reduced_30k.csv",
+   "N": 30000,
+   "features": 170,
+   "prev": 0.0167,
+   "auc": 0.9565774011299436,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D079",
+   "domain": "Industrial & anomaly",
+   "name": "Anomaly detection of Pulser System (HTRU2)",
+   "file": "HTRU_2_preprocessed.csv",
+   "N": 17898,
+   "features": 8,
+   "prev": 0.0916,
+   "auc": 0.97440036900369,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D058",
+   "domain": "Medical",
+   "name": "Alzheimers",
+   "file": "pre_alzheimers_disease.csv",
+   "N": 2149,
+   "features": 32,
+   "prev": 0.3537,
+   "auc": 0.8743478901089654,
+   "licence": "CC BY 4.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D059",
+   "domain": "Medical",
+   "name": "Breast Cancer Prediction",
+   "file": "Breast_Cancer_Preprocessed.csv",
+   "N": 4024,
+   "features": 14,
+   "prev": 0.1531,
+   "auc": 0.7144487596100499,
+   "licence": "Apache 2.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D060",
+   "domain": "Medical",
+   "name": "Diabetes Health Indicators",
+   "file": "preprocessed_diabetes_data.csv",
+   "N": 229474,
+   "features": 21,
+   "prev": 0.1529,
+   "auc": 0.804935535673064,
+   "licence": "CC BY 4.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D061",
+   "domain": "Medical",
+   "name": "Healthy Lifestyle",
+   "file": "Healthy_Lifestyle_Imbalanced.csv",
+   "N": 11544,
+   "features": 45,
+   "prev": 0.1667,
+   "auc": 0.7826778620950068,
+   "licence": "CC0 1.0 Universal",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D062",
+   "domain": "Medical",
+   "name": "Hospital Length of Stay Dataset Microsoft",
+   "file": "LengthOfStay_Preprocessed.csv",
+   "N": 100000,
+   "features": 24,
+   "prev": 0.0856,
+   "auc": 0.932136777626084,
+   "licence": "MIT License",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D063",
+   "domain": "Medical",
+   "name": "ICU Patient Outcome Prediction",
+   "file": "ICU_Death_Prediction_Preprocessed.csv",
+   "N": 3600,
+   "features": 119,
+   "prev": 0.1397,
+   "auc": 0.775839576843291,
+   "licence": "CC BY-NC-SA 4.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D064",
+   "domain": "Medical",
+   "name": "NHS Admissions Data 2011 2020",
+   "file": "imbalanced_nhs_dataset.csv",
+   "N": 8043,
+   "features": 9,
+   "prev": 0.1667,
+   "auc": 0.9829402218148442,
+   "licence": "MIT License",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D069",
+   "domain": "Medical",
+   "name": "Stunting Wasting Dataset",
+   "file": "preprocessed_stunting_sampled_10k.csv",
+   "N": 10000,
+   "features": 4,
+   "prev": 0.2197,
+   "auc": 0.9625184495685865,
+   "licence": "Apache 2.0",
+   "host": "Kaggle"
+  },
+  {
+   "id": "D070",
+   "domain": "Medical",
+   "name": "Support Health Data for Death Prediction",
+   "file": "support2_preprocessed_binary.csv",
+   "N": 9105,
+   "features": 35,
+   "prev": 0.2592,
+   "auc": 0.902541675040754,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D071",
+   "domain": "Medical",
+   "name": "Cardiotocography Dataset",
+   "file": "CTG_preprocessed_scaled.csv",
+   "N": 2126,
+   "features": 21,
+   "prev": 0.2215,
+   "auc": 0.957204218217104,
+   "licence": "CC BY 4.0",
+   "host": "UCI"
+  },
+  {
+   "id": "D081",
+   "domain": "Medical",
+   "name": "Anomaly Detection with CNN Autoencoders",
+   "file": "MITBIH_ECG_Binary_Preprocessed.csv",
+   "N": 21892,
+   "features": 187,
+   "prev": 0.1724,
+   "auc": 0.8729753969739754,
+   "licence": "Open Data Commons Attribution License (ODC-By) v1.0",
+   "host": "Kaggle"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "D000",
+   "category": "Cyber-Security",
+   "file": "AndroidAdware_Binary_Preprocessed_Final.csv",
+   "reason": "weak signal (AUC 0.57)"
+  },
+  {
+   "id": "D003",
+   "category": "Cyber-Security",
+   "file": "pre_healthcare_ransomware.csv",
+   "reason": "weak signal (AUC 0.53)"
+  },
+  {
+   "id": "D007",
+   "category": "Cyber-Security",
+   "file": "phishing_imbalanced_40k.csv",
+   "reason": "near-perfect separation (AUC 1.0000); single-feature leakage (URLSimilarityIndex, AUC 0.996)"
+  },
+  {
+   "id": "D008",
+   "category": "Cyber-Security",
+   "file": "rt_iot_binary_preprocessed_5037.csv",
+   "reason": "near-perfect separation (AUC 1.0000); too few positives for the shift protocol (0/5 levels); 82% duplicate rows"
+  },
+  {
+   "id": "D009",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_imbalanced_credit_data.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D010",
+   "category": "Finance and Marketing",
+   "file": "Ready Data.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D011",
+   "category": "Finance and Marketing",
+   "file": "CCCD_Prepro_IMB.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D012",
+   "category": "Finance and Marketing",
+   "file": "German_preproces.csv",
+   "reason": "too few positives for the shift protocol (3/5 levels)"
+  },
+  {
+   "id": "D013",
+   "category": "Finance and Marketing",
+   "file": "Credit_preprocessed.csv",
+   "reason": "file truncated inside the archive"
+  },
+  {
+   "id": "D014",
+   "category": "Finance and Marketing",
+   "file": "cc_app_imb.csv",
+   "reason": "too few positives for the shift protocol (2/5 levels)"
+  },
+  {
+   "id": "D017",
+   "category": "Finance and Marketing",
+   "file": "crx_imb.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D019",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_loan_approval.csv",
+   "reason": "too few positives for the shift protocol (3/5 levels)"
+  },
+  {
+   "id": "D020",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_loan.csv",
+   "reason": "weak signal (AUC 0.61)"
+  },
+  {
+   "id": "D023",
+   "category": "Finance and Marketing",
+   "file": "pre_Loan_dataApp.csv",
+   "reason": "weak signal (AUC 0.66); too few positives for the shift protocol (3/5 levels)"
+  },
+  {
+   "id": "D024",
+   "category": "Finance and Marketing",
+   "file": "pre_loan_data.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D025",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_default_fin.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D026",
+   "category": "Finance and Marketing",
+   "file": "pre_binancecoin_binary.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D027",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_financial_distress.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D028",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_financial_budget.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D029",
+   "category": "Finance and Marketing",
+   "file": "preprocessed_income_dataset.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D031",
+   "category": "Finance and Marketing",
+   "file": "pre_companies_marketvalue.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D032",
+   "category": "Finance and Marketing",
+   "file": "NIFTY500_Imbalanced.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D033",
+   "category": "Finance and Marketing",
+   "file": "audit_risk_preprocessed.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D034",
+   "category": "Finance and Marketing",
+   "file": "ad_preprocessed.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D035",
+   "category": "Finance and Marketing",
+   "file": "pre_high_value_cust.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D036",
+   "category": "Finance and Marketing",
+   "file": "prepro_trade_invest.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D037",
+   "category": "Finance and Marketing",
+   "file": "TurkishCF_Preprocessed.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D038",
+   "category": "Finance and Marketing",
+   "file": "pre_IMB_Insu.csv",
+   "reason": "too few positives for the shift protocol (3/5 levels)"
+  },
+  {
+   "id": "D040",
+   "category": "Finance and Marketing",
+   "file": "pre_ins_imb.csv",
+   "reason": "not in uploaded archives"
+  },
+  {
+   "id": "D051",
+   "category": "Fraud / insurance",
+   "file": "Bank_Transactions_Preprocessed.csv",
+   "reason": "too few positives for the shift protocol (3/5 levels)"
+  },
+  {
+   "id": "D052",
+   "category": "Fraud / insurance",
+   "file": "preprocessed_credit_fraud.csv",
+   "reason": "near-perfect separation (AUC 0.9985); too few positives for the shift protocol (0/5 levels)"
+  },
+  {
+   "id": "D053",
+   "category": "Fraud / insurance",
+   "file": "CreditCard_Preprocessed.csv",
+   "reason": "too few positives for the shift protocol (1/5 levels)"
+  },
+  {
+   "id": "D057",
+   "category": "Fraud / insurance",
+   "file": "Pre_Loan_Fraud_Dataset.csv",
+   "reason": "file truncated inside the archive"
+  },
+  {
+   "id": "D065",
+   "category": "Medical",
+   "file": "pre_ovarian_cancer_binary.csv",
+   "reason": "weak signal (AUC 0.50)"
+  },
+  {
+   "id": "D067",
+   "category": "Medical",
+   "file": "parkinsons_highly_imbalanced.csv",
+   "reason": "79% duplicate rows"
+  },
+  {
+   "id": "D068",
+   "category": "Medical",
+   "file": "pre_stroke_risk.csv",
+   "reason": "near-perfect separation (AUC 1.0000)"
+  },
+  {
+   "id": "D073",
+   "category": "Maintenance / other",
+   "file": "Helicopter_Anomaly_dataset.csv",
+   "reason": "no usable binary target"
+  },
+  {
+   "id": "D074",
+   "category": "Maintenance / other",
+   "file": "pre_train_fault.csv",
+   "reason": "no usable binary target"
+  },
+  {
+   "id": "D078",
+   "category": "Maintenance / other",
+   "file": "pop_failures_binary_preprocessed.csv",
+   "reason": "too few positives for the shift protocol (0/5 levels)"
+  },
+  {
+   "id": "D080",
+   "category": "Maintenance / other",
+   "file": "ionosphere_preprocessed_corrected.csv",
+   "reason": "too few positives for the shift protocol (1/5 levels)"
+  },
+  {
+   "id": "D082",
+   "category": "Fraud / insurance",
+   "file": "Final_Healthcare.csv",
+   "reason": "too few positives for the shift protocol (0/5 levels)"
+  },
+  {
+   "id": "C02",
+   "category": "Cyber-Security",
+   "file": "pre_phishing_imb.csv",
+   "reason": "47% duplicate rows"
+  },
+  {
+   "id": "C03",
+   "category": "Cyber-Security",
+   "file": "Phising_dataset_predict.csv",
+   "reason": "78% duplicate rows"
+  }
+ ],
+ "per_dataset": {
+  "C01": {
+   "Fixed-0.5": 65.72499999999995,
+   "SMOTE@0.5": 9.415000000000008,
+   "SMOTE+cal+tuned": 10.420000000000016,
+   "Source-tuned": 22.32999999999997,
+   "BBSE-SAT": 1.04499999999999,
+   "SMOTE+cal+SAT": 4.855000000000004,
+   "Point-SAT": 1.04999999999999,
+   "Robust-SAT": 1.04999999999999
+  },
+  "C04": {
+   "Fixed-0.5": 370.67961714535016,
+   "SMOTE@0.5": 128.11458842200042,
+   "SMOTE+cal+tuned": 150.96585532781964,
+   "Source-tuned": 134.40331382300434,
+   "BBSE-SAT": 16.010880675860903,
+   "SMOTE+cal+SAT": 12.579579720438064,
+   "Point-SAT": 15.648994355163834,
+   "Robust-SAT": 77.45039671140707
+  },
+  "D001": {
+   "Fixed-0.5": 66.14564714265363,
+   "SMOTE@0.5": 7.45390389636449,
+   "SMOTE+cal+tuned": 5.296511115053966,
+   "Source-tuned": 19.721143920559445,
+   "BBSE-SAT": 8.737865972384808,
+   "SMOTE+cal+SAT": 5.013695117777396,
+   "Point-SAT": 10.856313332943712,
+   "Robust-SAT": 10.856313332943712
+  },
+  "D002": {
+   "Fixed-0.5": 26.344230987892683,
+   "SMOTE@0.5": 14.333984146163878,
+   "SMOTE+cal+tuned": 15.168056613768135,
+   "Source-tuned": 7.59588506024553,
+   "BBSE-SAT": 9.740760777627422,
+   "SMOTE+cal+SAT": 4.647223280434814,
+   "Point-SAT": 9.539249812836168,
+   "Robust-SAT": 9.539249812836168
+  },
+  "D004": {
+   "Fixed-0.5": 179.12393292728993,
+   "SMOTE@0.5": 28.62907605346532,
+   "SMOTE+cal+tuned": 27.988979893953942,
+   "Source-tuned": 7.661168306251054,
+   "BBSE-SAT": 3.896900576950894,
+   "SMOTE+cal+SAT": 17.22290916117852,
+   "Point-SAT": 5.844854744499692,
+   "Robust-SAT": 9.652754897433812
+  },
+  "D005": {
+   "Fixed-0.5": 4.837763730743438,
+   "SMOTE@0.5": 6.86153717347618,
+   "SMOTE+cal+tuned": -5.06539266577357,
+   "Source-tuned": 1.8962240455458623,
+   "BBSE-SAT": 1.99963580040185,
+   "SMOTE+cal+SAT": -2.9262642330877098,
+   "Point-SAT": 2.130885800401847,
+   "Robust-SAT": 2.130885800401847
+  },
+  "D006": {
+   "Fixed-0.5": 181.95091999032164,
+   "SMOTE@0.5": 73.30192642078897,
+   "SMOTE+cal+tuned": 74.60366339134997,
+   "Source-tuned": 94.93127301615831,
+   "BBSE-SAT": 13.755307078393887,
+   "SMOTE+cal+SAT": 13.124737807960166,
+   "Point-SAT": 24.99548583930018,
+   "Robust-SAT": 51.802594966165096
+  },
+  "D021": {
+   "Fixed-0.5": 199.85830893362728,
+   "SMOTE@0.5": 90.2756103869786,
+   "SMOTE+cal+tuned": 17.182307909648376,
+   "Source-tuned": 17.819554896807258,
+   "BBSE-SAT": 4.855000747354115,
+   "SMOTE+cal+SAT": 6.648763281451492,
+   "Point-SAT": 11.162029375221001,
+   "Robust-SAT": 17.819554896807258
+  },
+  "D039": {
+   "Fixed-0.5": 1130.6418604651162,
+   "SMOTE@0.5": 274.6249952732085,
+   "SMOTE+cal+tuned": 190.20015125732647,
+   "Source-tuned": 168.96120249574585,
+   "BBSE-SAT": 54.4589903573454,
+   "SMOTE+cal+SAT": 113.66681792399316,
+   "Point-SAT": 103.49245604083941,
+   "Robust-SAT": 165.81550387596894
+  },
+  "D042": {
+   "Fixed-0.5": 98.64436463727283,
+   "SMOTE@0.5": 109.77330415868951,
+   "SMOTE+cal+tuned": 70.15632414091733,
+   "Source-tuned": 64.82779929742392,
+   "BBSE-SAT": 149.0041927105542,
+   "SMOTE+cal+SAT": 17.88565240922472,
+   "Point-SAT": 2.588698365936,
+   "Robust-SAT": 2.588698365936
+  },
+  "D044": {
+   "Fixed-0.5": 586.7309757945635,
+   "SMOTE@0.5": 248.69060133600863,
+   "SMOTE+cal+tuned": 108.33820225036388,
+   "Source-tuned": 98.74512346225427,
+   "BBSE-SAT": 3.372597960269768,
+   "SMOTE+cal+SAT": 10.932453460258229,
+   "Point-SAT": 12.107241229775374,
+   "Robust-SAT": 65.91058192404498
+  },
+  "D046": {
+   "Fixed-0.5": 261.705,
+   "SMOTE@0.5": 47.66499999999997,
+   "SMOTE+cal+tuned": 52.064999999999955,
+   "Source-tuned": 48.469999999999956,
+   "BBSE-SAT": 4.969999999999979,
+   "SMOTE+cal+SAT": 4.259999999999992,
+   "Point-SAT": 6.314999999999979,
+   "Robust-SAT": 6.314999999999979
+  },
+  "D048": {
+   "Fixed-0.5": 169.94542047776267,
+   "SMOTE@0.5": 91.77948730812784,
+   "SMOTE+cal+tuned": 96.84223939506178,
+   "Source-tuned": 89.69402148224258,
+   "BBSE-SAT": 10.360180146269755,
+   "SMOTE+cal+SAT": 1.2197818434235643,
+   "Point-SAT": 11.336825581513905,
+   "Robust-SAT": 63.33257929701284
+  },
+  "D049": {
+   "Fixed-0.5": 185.46891780090746,
+   "SMOTE@0.5": 79.2263324513058,
+   "SMOTE+cal+tuned": 54.27486452909419,
+   "Source-tuned": 79.84190793262806,
+   "BBSE-SAT": 12.11410815833513,
+   "SMOTE+cal+SAT": 0.3915217041752443,
+   "Point-SAT": 12.418551591759455,
+   "Robust-SAT": 12.418551591759455
+  },
+  "D050": {
+   "Fixed-0.5": 628.2447313373884,
+   "SMOTE@0.5": 116.86609506737224,
+   "SMOTE+cal+tuned": 83.74352867700482,
+   "Source-tuned": 59.53137755203006,
+   "BBSE-SAT": 26.23388839837708,
+   "SMOTE+cal+SAT": 25.08911578778891,
+   "Point-SAT": 28.220831917304178,
+   "Robust-SAT": 58.551026667622885
+  },
+  "D054": {
+   "Fixed-0.5": 575.2394444444444,
+   "SMOTE@0.5": 190.334074074074,
+   "SMOTE+cal+tuned": 262.24055555555555,
+   "Source-tuned": 213.64018518518515,
+   "BBSE-SAT": 8.456481481481427,
+   "SMOTE+cal+SAT": 10.792962962962926,
+   "Point-SAT": 3.646481481481436,
+   "Robust-SAT": 16.46870370370366
+  },
+  "D056": {
+   "Fixed-0.5": 820.7086889984864,
+   "SMOTE@0.5": 22.961061560833713,
+   "SMOTE+cal+tuned": 23.64702864611268,
+   "Source-tuned": 22.961061560833713,
+   "BBSE-SAT": 5.730851274513549,
+   "SMOTE+cal+SAT": 2.178023147274406,
+   "Point-SAT": 2.4143892389723582,
+   "Robust-SAT": 4.014001454192901
+  },
+  "D058": {
+   "Fixed-0.5": 192.0562012331087,
+   "SMOTE@0.5": 94.88116690030041,
+   "SMOTE+cal+tuned": 42.136661205067504,
+   "Source-tuned": 63.53739238646289,
+   "BBSE-SAT": 7.838360208664298,
+   "SMOTE+cal+SAT": 3.875071870132918,
+   "Point-SAT": 7.73974087927574,
+   "Robust-SAT": 59.13183968037351
+  },
+  "D059": {
+   "Fixed-0.5": 418.17916506411154,
+   "SMOTE@0.5": 173.84763630033174,
+   "SMOTE+cal+tuned": 196.4205864578091,
+   "Source-tuned": 141.48789473179684,
+   "BBSE-SAT": 21.899010381706056,
+   "SMOTE+cal+SAT": 61.06240238107686,
+   "Point-SAT": 24.378967247944512,
+   "Robust-SAT": 114.0591730582557
+  },
+  "D060": {
+   "Fixed-0.5": 528.5849999999999,
+   "SMOTE@0.5": 118.11999999999996,
+   "SMOTE+cal+tuned": 110.36999999999995,
+   "Source-tuned": 122.26499999999999,
+   "BBSE-SAT": 7.604999999999964,
+   "SMOTE+cal+SAT": 7.70499999999997,
+   "Point-SAT": 5.784999999999964,
+   "Robust-SAT": 5.784999999999964
+  },
+  "D061": {
+   "Fixed-0.5": 538.9613959903393,
+   "SMOTE@0.5": 169.64218084894887,
+   "SMOTE+cal+tuned": 136.60802028013077,
+   "Source-tuned": 127.39962629643357,
+   "BBSE-SAT": 24.68570539018184,
+   "SMOTE+cal+SAT": 19.49004770289957,
+   "Point-SAT": 8.055169084334151,
+   "Robust-SAT": 8.055169084334151
+  },
+  "D062": {
+   "Fixed-0.5": 126.80999999999997,
+   "SMOTE@0.5": 23.869999999999962,
+   "SMOTE+cal+tuned": 20.544999999999977,
+   "Source-tuned": 21.13999999999997,
+   "BBSE-SAT": 3.67499999999998,
+   "SMOTE+cal+SAT": 1.629999999999992,
+   "Point-SAT": 3.689999999999986,
+   "Robust-SAT": 3.689999999999986
+  },
+  "D063": {
+   "Fixed-0.5": 380.9846047279312,
+   "SMOTE@0.5": 115.61661456117305,
+   "SMOTE+cal+tuned": 114.92852400655272,
+   "Source-tuned": 123.52766421452247,
+   "BBSE-SAT": 30.26458696889904,
+   "SMOTE+cal+SAT": 33.935784860836186,
+   "Point-SAT": 41.89499561162801,
+   "Robust-SAT": 76.11260027995135
+  },
+  "D064": {
+   "Fixed-0.5": 102.03742913231808,
+   "SMOTE@0.5": 25.629706178198628,
+   "SMOTE+cal+tuned": 5.941320415182764,
+   "Source-tuned": 12.310814519546083,
+   "BBSE-SAT": 5.207762360338783,
+   "SMOTE+cal+SAT": -4.7560927946302645,
+   "Point-SAT": 4.872882041407376,
+   "Robust-SAT": 4.872882041407376
+  },
+  "D069": {
+   "Fixed-0.5": 110.4984817969166,
+   "SMOTE@0.5": 26.222224771125525,
+   "SMOTE+cal+tuned": 10.09695666964705,
+   "Source-tuned": 15.719665712333144,
+   "BBSE-SAT": 2.450674445839296,
+   "SMOTE+cal+SAT": -4.233929957340966,
+   "Point-SAT": 2.6882041370506937,
+   "Robust-SAT": 12.594870803717356
+  },
+  "D070": {
+   "Fixed-0.5": 272.9004579965612,
+   "SMOTE@0.5": 179.41858656152908,
+   "SMOTE+cal+tuned": 166.1551462568338,
+   "Source-tuned": 128.9469050638467,
+   "BBSE-SAT": 6.900425244049863,
+   "SMOTE+cal+SAT": 15.406819263482369,
+   "Point-SAT": 9.534845356874904,
+   "Robust-SAT": 26.32321204159541
+  },
+  "D071": {
+   "Fixed-0.5": 223.04195855622407,
+   "SMOTE@0.5": 17.594274725122034,
+   "SMOTE+cal+tuned": 31.60553037489895,
+   "Source-tuned": 14.341379431502734,
+   "BBSE-SAT": 7.9723016758519245,
+   "SMOTE+cal+SAT": -0.651669777033496,
+   "Point-SAT": 11.42572841887201,
+   "Robust-SAT": 14.341379431502734
+  },
+  "D075": {
+   "Fixed-0.5": 63.09945100661415,
+   "SMOTE@0.5": 84.65431986342587,
+   "SMOTE+cal+tuned": 17.394058196190564,
+   "Source-tuned": 5.915973404763633,
+   "BBSE-SAT": 3.627157641868528,
+   "SMOTE+cal+SAT": 8.532802981121078,
+   "Point-SAT": 3.459352580453736,
+   "Robust-SAT": 3.459352580453736
+  },
+  "D076": {
+   "Fixed-0.5": 49.79716500375495,
+   "SMOTE@0.5": 63.05935521939701,
+   "SMOTE+cal+tuned": 10.101216339448538,
+   "Source-tuned": 52.98261318528053,
+   "BBSE-SAT": 1.9230769230769202,
+   "SMOTE+cal+SAT": 35.386727550691965,
+   "Point-SAT": 1.9230769230769202,
+   "Robust-SAT": 2.4460894753781752
+  },
+  "D077": {
+   "Fixed-0.5": 15.496666666666632,
+   "SMOTE@0.5": 12.696666666666632,
+   "SMOTE+cal+tuned": 9.013333333333287,
+   "Source-tuned": 1.22999999999998,
+   "BBSE-SAT": 2.194999999999964,
+   "SMOTE+cal+SAT": 8.036666666666624,
+   "Point-SAT": 2.458333333333294,
+   "Robust-SAT": 2.458333333333294
+  },
+  "D079": {
+   "Fixed-0.5": 10.661439442600573,
+   "SMOTE@0.5": -2.795051943343762,
+   "SMOTE+cal+tuned": -0.42821851043918,
+   "Source-tuned": 1.131686148538648,
+   "BBSE-SAT": 0.957010050251244,
+   "SMOTE+cal+SAT": -0.42821851043918,
+   "Point-SAT": 1.032010050251242,
+   "Robust-SAT": 1.032010050251242
+  },
+  "D081": {
+   "Fixed-0.5": 245.51324487819986,
+   "SMOTE@0.5": 66.85606261306809,
+   "SMOTE+cal+tuned": 34.36483925595356,
+   "Source-tuned": 100.55223437264964,
+   "BBSE-SAT": 4.668760347023496,
+   "SMOTE+cal+SAT": -13.507687854997833,
+   "Point-SAT": 2.001984443859686,
+   "Robust-SAT": 2.001984443859686
+  }
+ },
+ "ls_auc": {
+  "rows": [
+   {
+    "m": "1/3",
+    "n": 30,
+    "mean": 0.5310085296577266,
+    "max": 0.6090400929005846,
+    "ge06": 1,
+    "ge08": 0
+   },
+   {
+    "m": "1",
+    "n": 32,
+    "mean": 0.500042465987022,
+    "max": 0.5346094647999876,
+    "ge06": 0,
+    "ge08": 0
+   },
+   {
+    "m": "3",
+    "n": 30,
+    "mean": 0.589770951280416,
+    "max": 0.7068222130529948,
+    "ge06": 12,
+    "ge08": 0
+   }
+  ],
+  "min": 0.4482782925172683,
+  "max": 0.7068222130529948
+ },
+ "dropped": {
+  "D002": [
+   "Unnamed: 0",
+   "url"
+  ],
+  "D058": [
+   "PatientID",
+   "DoctorInCharge"
+  ],
+  "D059": [
+   "Survival Months"
+  ],
+  "D064": [
+   "total_admitted"
+  ],
+  "D070": [
+   "slos",
+   "surv2m",
+   "surv6m",
+   "dnr",
+   "dnrday",
+   "charges",
+   "totcst",
+   "totmcst"
+  ],
+  "D071": [
+   "b",
+   "e",
+   "AC",
+   "FM",
+   "UC",
+   "DL",
+   "DS",
+   "DP",
+   "DR",
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "AD",
+   "DE",
+   "LD",
+   "FS",
+   "SUSP"
+  ],
+  "D075": [
+   "TWF",
+   "HDF",
+   "PWF",
+   "OSF",
+   "RNF"
+  ]
+ },
+ "sources": [
+  {
+   "id": "C01",
+   "host": "",
+   "url": "",
+   "licence": "not recorded"
+  },
+  {
+   "id": "C04",
+   "host": "",
+   "url": "",
+   "licence": "not recorded"
+  },
+  {
+   "id": "D001",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/saurabhshahane/classification-of-malwares",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D002",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/winson13/dataset-for-link-phishing-detection/data",
+   "licence": "MIT License"
+  },
+  {
+   "id": "D004",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/ankit1743/android-malware-detection-dataset",
+   "licence": "CC0 1.0 Universal"
+  },
+  {
+   "id": "D005",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset",
+   "licence": "CC0 1.0 Universal"
+  },
+  {
+   "id": "D006",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/pilarpieiro/tabular-dataset-ready-for-malicious-url-detection/data",
+   "licence": "Apache 2.0"
+  },
+  {
+   "id": "D021",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset",
+   "licence": "MIT License"
+  },
+  {
+   "id": "D039",
+   "host": "data.mendeley.com",
+   "url": "https://data.mendeley.com/datasets/992mh7dk9y/2",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D042",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/125/insurance+company+benchmark+coil+2000",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D044",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/code/bhartiprasad17/customer-churn-prediction/input",
+   "licence": "CC0 1.0 Universal"
+  },
+  {
+   "id": "D046",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D048",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D049",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset.",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D050",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/hawkingcr/airbnb-for-boston-with-fraud-detection",
+   "licence": "AGPL-3.0 (GNU Affero General Public License, version 3)"
+  },
+  {
+   "id": "D054",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage",
+   "licence": "Unspecified (see source)"
+  },
+  {
+   "id": "D056",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/arashnic/imbalanced-data-practice",
+   "licence": "CC0 1.0 Universal"
+  },
+  {
+   "id": "D075",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D076",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/3/annealing",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D077",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D079",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/372/htru2",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D058",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D059",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/marshalpatel3558/breast-cancer-prediction",
+   "licence": "Apache 2.0"
+  },
+  {
+   "id": "D060",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D061",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/aditibabu/healthy-lifestyle",
+   "licence": "CC0 1.0 Universal"
+  },
+  {
+   "id": "D062",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/aayushchou/hospital-length-of-stay-dataset-microsoft",
+   "licence": "MIT License"
+  },
+  {
+   "id": "D063",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/fdemoribajolin/death-classification-icu",
+   "licence": "CC BY-NC-SA 4.0"
+  },
+  {
+   "id": "D064",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/tomfarnell/nhs-admissions-data-2011-2020",
+   "licence": "MIT License"
+  },
+  {
+   "id": "D069",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/datasets/jabirmuktabir/stunting-wasting-dataset",
+   "licence": "Apache 2.0"
+  },
+  {
+   "id": "D070",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/880/support2",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D071",
+   "host": "UCI",
+   "url": "https://archive.ics.uci.edu/dataset/193/cardiotocography",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "id": "D081",
+   "host": "Kaggle",
+   "url": "https://www.kaggle.com/code/redpen12/anomaly-detection-with-cnn-autoencoders/input",
+   "licence": "Open Data Commons Attribution License (ODC-By) v1.0"
+  }
+ ]
+}
