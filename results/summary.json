@@ -1,0 +1,404 @@
+{
+ "N": 32,
+ "friedman": {
+  "chi2": 150.07233883058467,
+  "p": 3.920319670237327e-29,
+  "CD": 1.856100852593953
+ },
+ "summary": {
+  "mean abs cost": {
+   "Fixed-0.5": 0.5103,
+   "SMOTE@0.5": 0.319,
+   "SMOTE+cal+tuned": 0.3013,
+   "Source-tuned": 0.2995,
+   "BBSE-SAT": 0.2489,
+   "SMOTE+cal+SAT": 0.2475,
+   "Point-SAT": 0.2467,
+   "Robust-SAT": 0.2629
+  },
+  "mean excess x1e3": {
+   "Fixed-0.5": 275.96,
+   "SMOTE@0.5": 84.68,
+   "SMOTE+cal+tuned": 66.98,
+   "Source-tuned": 65.17,
+   "BBSE-SAT": 14.58,
+   "SMOTE+cal+SAT": 13.1,
+   "Point-SAT": 12.33,
+   "Robust-SAT": 28.5
+  },
+  "median excess x1e3": {
+   "Fixed-0.5": 188.76,
+   "SMOTE@0.5": 76.26,
+   "SMOTE+cal+tuned": 38.25,
+   "Source-tuned": 56.26,
+   "BBSE-SAT": 7.25,
+   "SMOTE+cal+SAT": 7.18,
+   "Point-SAT": 7.03,
+   "Robust-SAT": 10.25
+  },
+  "avg rank": {
+   "Fixed-0.5": 7.81,
+   "SMOTE@0.5": 6.17,
+   "SMOTE+cal+tuned": 5.39,
+   "Source-tuned": 5.39,
+   "BBSE-SAT": 2.58,
+   "SMOTE+cal+SAT": 2.23,
+   "Point-SAT": 2.75,
+   "Robust-SAT": 3.67
+  }
+ },
+ "per_dataset_x1e3": {
+  "C01": {
+   "AUC": 0.98,
+   "Fixed-0.5": 65.72,
+   "SMOTE@0.5": 9.42,
+   "SMOTE+cal+tuned": 10.42,
+   "Source-tuned": 22.33,
+   "BBSE-SAT": 1.04,
+   "SMOTE+cal+SAT": 4.86,
+   "Point-SAT": 1.05,
+   "Robust-SAT": 1.05
+  },
+  "C04": {
+   "AUC": 0.793,
+   "Fixed-0.5": 370.68,
+   "SMOTE@0.5": 128.11,
+   "SMOTE+cal+tuned": 150.97,
+   "Source-tuned": 134.4,
+   "BBSE-SAT": 16.01,
+   "SMOTE+cal+SAT": 12.58,
+   "Point-SAT": 15.65,
+   "Robust-SAT": 77.45
+  },
+  "D001": {
+   "AUC": 0.984,
+   "Fixed-0.5": 66.15,
+   "SMOTE@0.5": 7.45,
+   "SMOTE+cal+tuned": 5.3,
+   "Source-tuned": 19.72,
+   "BBSE-SAT": 8.74,
+   "SMOTE+cal+SAT": 5.01,
+   "Point-SAT": 10.86,
+   "Robust-SAT": 10.86
+  },
+  "D002": {
+   "AUC": 0.984,
+   "Fixed-0.5": 26.34,
+   "SMOTE@0.5": 14.33,
+   "SMOTE+cal+tuned": 15.17,
+   "Source-tuned": 7.6,
+   "BBSE-SAT": 9.74,
+   "SMOTE+cal+SAT": 4.65,
+   "Point-SAT": 9.54,
+   "Robust-SAT": 9.54
+  },
+  "D004": {
+   "AUC": 0.976,
+   "Fixed-0.5": 179.12,
+   "SMOTE@0.5": 28.63,
+   "SMOTE+cal+tuned": 27.99,
+   "Source-tuned": 7.66,
+   "BBSE-SAT": 3.9,
+   "SMOTE+cal+SAT": 17.22,
+   "Point-SAT": 5.84,
+   "Robust-SAT": 9.65
+  },
+  "D005": {
+   "AUC": 0.993,
+   "Fixed-0.5": 4.84,
+   "SMOTE@0.5": 6.86,
+   "SMOTE+cal+tuned": -5.07,
+   "Source-tuned": 1.9,
+   "BBSE-SAT": 2.0,
+   "SMOTE+cal+SAT": -2.93,
+   "Point-SAT": 2.13,
+   "Robust-SAT": 2.13
+  },
+  "D006": {
+   "AUC": 0.897,
+   "Fixed-0.5": 181.95,
+   "SMOTE@0.5": 73.3,
+   "SMOTE+cal+tuned": 74.6,
+   "Source-tuned": 94.93,
+   "BBSE-SAT": 13.76,
+   "SMOTE+cal+SAT": 13.12,
+   "Point-SAT": 25.0,
+   "Robust-SAT": 51.8
+  },
+  "D021": {
+   "AUC": 0.967,
+   "Fixed-0.5": 199.86,
+   "SMOTE@0.5": 90.28,
+   "SMOTE+cal+tuned": 17.18,
+   "Source-tuned": 17.82,
+   "BBSE-SAT": 4.86,
+   "SMOTE+cal+SAT": 6.65,
+   "Point-SAT": 11.16,
+   "Robust-SAT": 17.82
+  },
+  "D039": {
+   "AUC": 0.738,
+   "Fixed-0.5": 1130.64,
+   "SMOTE@0.5": 274.62,
+   "SMOTE+cal+tuned": 190.2,
+   "Source-tuned": 168.96,
+   "BBSE-SAT": 54.46,
+   "SMOTE+cal+SAT": 113.67,
+   "Point-SAT": 103.49,
+   "Robust-SAT": 165.82
+  },
+  "D042": {
+   "AUC": 0.72,
+   "Fixed-0.5": 98.64,
+   "SMOTE@0.5": 109.77,
+   "SMOTE+cal+tuned": 70.16,
+   "Source-tuned": 64.83,
+   "BBSE-SAT": 149.0,
+   "SMOTE+cal+SAT": 17.89,
+   "Point-SAT": 2.59,
+   "Robust-SAT": 2.59
+  },
+  "D044": {
+   "AUC": 0.84,
+   "Fixed-0.5": 586.73,
+   "SMOTE@0.5": 248.69,
+   "SMOTE+cal+tuned": 108.34,
+   "Source-tuned": 98.75,
+   "BBSE-SAT": 3.37,
+   "SMOTE+cal+SAT": 10.93,
+   "Point-SAT": 12.11,
+   "Robust-SAT": 65.91
+  },
+  "D046": {
+   "AUC": 0.785,
+   "Fixed-0.5": 261.7,
+   "SMOTE@0.5": 47.66,
+   "SMOTE+cal+tuned": 52.06,
+   "Source-tuned": 48.47,
+   "BBSE-SAT": 4.97,
+   "SMOTE+cal+SAT": 4.26,
+   "Point-SAT": 6.31,
+   "Robust-SAT": 6.31
+  },
+  "D048": {
+   "AUC": 0.893,
+   "Fixed-0.5": 169.95,
+   "SMOTE@0.5": 91.78,
+   "SMOTE+cal+tuned": 96.84,
+   "Source-tuned": 89.69,
+   "BBSE-SAT": 10.36,
+   "SMOTE+cal+SAT": 1.22,
+   "Point-SAT": 11.34,
+   "Robust-SAT": 63.33
+  },
+  "D049": {
+   "AUC": 0.886,
+   "Fixed-0.5": 185.47,
+   "SMOTE@0.5": 79.23,
+   "SMOTE+cal+tuned": 54.27,
+   "Source-tuned": 79.84,
+   "BBSE-SAT": 12.11,
+   "SMOTE+cal+SAT": 0.39,
+   "Point-SAT": 12.42,
+   "Robust-SAT": 12.42
+  },
+  "D050": {
+   "AUC": 0.888,
+   "Fixed-0.5": 628.24,
+   "SMOTE@0.5": 116.87,
+   "SMOTE+cal+tuned": 83.74,
+   "Source-tuned": 59.53,
+   "BBSE-SAT": 26.23,
+   "SMOTE+cal+SAT": 25.09,
+   "Point-SAT": 28.22,
+   "Robust-SAT": 58.55
+  },
+  "D054": {
+   "AUC": 0.709,
+   "Fixed-0.5": 575.24,
+   "SMOTE@0.5": 190.33,
+   "SMOTE+cal+tuned": 262.24,
+   "Source-tuned": 213.64,
+   "BBSE-SAT": 8.46,
+   "SMOTE+cal+SAT": 10.79,
+   "Point-SAT": 3.65,
+   "Robust-SAT": 16.47
+  },
+  "D056": {
+   "AUC": 0.848,
+   "Fixed-0.5": 820.71,
+   "SMOTE@0.5": 22.96,
+   "SMOTE+cal+tuned": 23.65,
+   "Source-tuned": 22.96,
+   "BBSE-SAT": 5.73,
+   "SMOTE+cal+SAT": 2.18,
+   "Point-SAT": 2.41,
+   "Robust-SAT": 4.01
+  },
+  "D058": {
+   "AUC": 0.874,
+   "Fixed-0.5": 192.06,
+   "SMOTE@0.5": 94.88,
+   "SMOTE+cal+tuned": 42.14,
+   "Source-tuned": 63.54,
+   "BBSE-SAT": 7.84,
+   "SMOTE+cal+SAT": 3.88,
+   "Point-SAT": 7.74,
+   "Robust-SAT": 59.13
+  },
+  "D059": {
+   "AUC": 0.714,
+   "Fixed-0.5": 418.18,
+   "SMOTE@0.5": 173.85,
+   "SMOTE+cal+tuned": 196.42,
+   "Source-tuned": 141.49,
+   "BBSE-SAT": 21.9,
+   "SMOTE+cal+SAT": 61.06,
+   "Point-SAT": 24.38,
+   "Robust-SAT": 114.06
+  },
+  "D060": {
+   "AUC": 0.805,
+   "Fixed-0.5": 528.58,
+   "SMOTE@0.5": 118.12,
+   "SMOTE+cal+tuned": 110.37,
+   "Source-tuned": 122.26,
+   "BBSE-SAT": 7.6,
+   "SMOTE+cal+SAT": 7.7,
+   "Point-SAT": 5.78,
+   "Robust-SAT": 5.78
+  },
+  "D061": {
+   "AUC": 0.783,
+   "Fixed-0.5": 538.96,
+   "SMOTE@0.5": 169.64,
+   "SMOTE+cal+tuned": 136.61,
+   "Source-tuned": 127.4,
+   "BBSE-SAT": 24.69,
+   "SMOTE+cal+SAT": 19.49,
+   "Point-SAT": 8.06,
+   "Robust-SAT": 8.06
+  },
+  "D062": {
+   "AUC": 0.932,
+   "Fixed-0.5": 126.81,
+   "SMOTE@0.5": 23.87,
+   "SMOTE+cal+tuned": 20.54,
+   "Source-tuned": 21.14,
+   "BBSE-SAT": 3.67,
+   "SMOTE+cal+SAT": 1.63,
+   "Point-SAT": 3.69,
+   "Robust-SAT": 3.69
+  },
+  "D063": {
+   "AUC": 0.776,
+   "Fixed-0.5": 380.98,
+   "SMOTE@0.5": 115.62,
+   "SMOTE+cal+tuned": 114.93,
+   "Source-tuned": 123.53,
+   "BBSE-SAT": 30.26,
+   "SMOTE+cal+SAT": 33.94,
+   "Point-SAT": 41.89,
+   "Robust-SAT": 76.11
+  },
+  "D064": {
+   "AUC": 0.983,
+   "Fixed-0.5": 102.04,
+   "SMOTE@0.5": 25.63,
+   "SMOTE+cal+tuned": 5.94,
+   "Source-tuned": 12.31,
+   "BBSE-SAT": 5.21,
+   "SMOTE+cal+SAT": -4.76,
+   "Point-SAT": 4.87,
+   "Robust-SAT": 4.87
+  },
+  "D069": {
+   "AUC": 0.963,
+   "Fixed-0.5": 110.5,
+   "SMOTE@0.5": 26.22,
+   "SMOTE+cal+tuned": 10.1,
+   "Source-tuned": 15.72,
+   "BBSE-SAT": 2.45,
+   "SMOTE+cal+SAT": -4.23,
+   "Point-SAT": 2.69,
+   "Robust-SAT": 12.59
+  },
+  "D070": {
+   "AUC": 0.903,
+   "Fixed-0.5": 272.9,
+   "SMOTE@0.5": 179.42,
+   "SMOTE+cal+tuned": 166.16,
+   "Source-tuned": 128.95,
+   "BBSE-SAT": 6.9,
+   "SMOTE+cal+SAT": 15.41,
+   "Point-SAT": 9.53,
+   "Robust-SAT": 26.32
+  },
+  "D071": {
+   "AUC": 0.957,
+   "Fixed-0.5": 223.04,
+   "SMOTE@0.5": 17.59,
+   "SMOTE+cal+tuned": 31.61,
+   "Source-tuned": 14.34,
+   "BBSE-SAT": 7.97,
+   "SMOTE+cal+SAT": -0.65,
+   "Point-SAT": 11.43,
+   "Robust-SAT": 14.34
+  },
+  "D075": {
+   "AUC": 0.889,
+   "Fixed-0.5": 63.1,
+   "SMOTE@0.5": 84.65,
+   "SMOTE+cal+tuned": 17.39,
+   "Source-tuned": 5.92,
+   "BBSE-SAT": 3.63,
+   "SMOTE+cal+SAT": 8.53,
+   "Point-SAT": 3.46,
+   "Robust-SAT": 3.46
+  },
+  "D076": {
+   "AUC": 0.99,
+   "Fixed-0.5": 49.8,
+   "SMOTE@0.5": 63.06,
+   "SMOTE+cal+tuned": 10.1,
+   "Source-tuned": 52.98,
+   "BBSE-SAT": 1.92,
+   "SMOTE+cal+SAT": 35.39,
+   "Point-SAT": 1.92,
+   "Robust-SAT": 2.45
+  },
+  "D077": {
+   "AUC": 0.957,
+   "Fixed-0.5": 15.5,
+   "SMOTE@0.5": 12.7,
+   "SMOTE+cal+tuned": 9.01,
+   "Source-tuned": 1.23,
+   "BBSE-SAT": 2.19,
+   "SMOTE+cal+SAT": 8.04,
+   "Point-SAT": 2.46,
+   "Robust-SAT": 2.46
+  },
+  "D079": {
+   "AUC": 0.974,
+   "Fixed-0.5": 10.66,
+   "SMOTE@0.5": -2.8,
+   "SMOTE+cal+tuned": -0.43,
+   "Source-tuned": 1.13,
+   "BBSE-SAT": 0.96,
+   "SMOTE+cal+SAT": -0.43,
+   "Point-SAT": 1.03,
+   "Robust-SAT": 1.03
+  },
+  "D081": {
+   "AUC": 0.873,
+   "Fixed-0.5": 245.51,
+   "SMOTE@0.5": 66.86,
+   "SMOTE+cal+tuned": 34.36,
+   "Source-tuned": 100.55,
+   "BBSE-SAT": 4.67,
+   "SMOTE+cal+SAT": -13.51,
+   "Point-SAT": 2.0,
+   "Robust-SAT": 2.0
+  }
+ }
+}
