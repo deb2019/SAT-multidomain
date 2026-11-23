@@ -1,5 +1,0 @@
-case,batches,source prev,target prev (range),domain AUC (mean),EM |error| (mean),gate fired,Fixed-0.5,SMOTE+cal+tuned,Source-tuned,BBSE-SAT,SMOTE+cal+SAT,Point-SAT,Robust-SAT,PS<Src
-"Finance: card fraud, monthly (2020)",7,0.0058,0.0018–0.0055,0.549,0.0005,0/7,1.58,2.56,0.46,0.17,2.62,0.07,0.07,4/7
-"Medical: diabetes readmission, later periods",5,0.0994,0.0547–0.0949,0.834,0.3703,2/5,14.52,42.5,43.65,496.59,536.75,536.77,318.68,0/5
-"Marketing: bank campaign, later periods",5,0.0468,0.0546–0.4594,0.995,0.8187,5/5,351.34,351.34,351.34,351.34,280.02,280.65,351.34,1/5
-"Marketing: same, macro columns removed",5,0.0468,0.0546–0.4594,0.984,0.8187,5/5,372.36,372.36,372.36,372.36,301.58,301.43,372.36,1/5
