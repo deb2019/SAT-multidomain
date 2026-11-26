@@ -1,9 +1,20 @@
-# Shift-Adaptive Decision Thresholds under Prevalence Shift — multi-domain study
+# Shift-adaptive thresholding and threshold-change audits
 
-Code, results and figures for the manuscript
+## Current journal manuscript
+
+**Auditing Threshold Changes under Prevalence Shift with a Fixed Target Label Budget**  
+Debashis Roy, Anandarup Roy and Utpal Roy
+
+The journal audit evaluates whether to approve a proposed threshold change after inspecting a limited number of target labels. It covers 37 controlled datasets and four ordered case studies (40 distinct datasets after accounting for overlap).
+
+**[Journal audit code, results and reproduction guide](journal-audit/README.md)**
+
+## Earlier multi-domain benchmark
+
+Code, results and figures for the earlier benchmark manuscript
 
 > **Shift-Adaptive Decision Thresholds for Imbalanced Binary Classification under Prevalence Shift: A Multi-Domain Empirical Study.**
-> Debashis Roy, Anandarup Roy, Utpal Roy (manuscript under submission).
+> Debashis Roy, Anandarup Roy, Utpal Roy (earlier manuscript version).
 
 It extends the conference paper *Shift-Adaptive Thresholding: Retraining-Free, Assumption-Aware Decision Thresholds for Imbalanced Binary Classification under Label Shift* (IMPACT 2026, accepted), whose code is at <https://github.com/deb2019/SAT-shift-adaptive-thresholding>.
 
@@ -83,7 +94,7 @@ Numbering follows the journal version (JCTA format, 5 tables, 4 figures, 1 algor
   title   = {Shift-Adaptive Decision Thresholds for Imbalanced Binary Classification under
              Prevalence Shift: A Multi-Domain Empirical Study},
   author  = {Roy, Debashis and Roy, Anandarup and Roy, Utpal},
-  note    = {Manuscript under submission},
+  note    = {Earlier benchmark manuscript},
   year    = {2026}
 }
 ```
@@ -91,3 +102,4 @@ Numbering follows the journal version (JCTA format, 5 tables, 4 figures, 1 algor
 ## License
 
 Code: MIT (see `LICENSE`). Datasets remain under their original licences (`data/README.md`).
+
